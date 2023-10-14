@@ -25,21 +25,22 @@ const Ayam = () => {
         <meta name="author" content="Fadhil Muhammad Rafi" />
       </Head>
       <Landing />
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
-      <h1>HAHA</h1>
+      <section id="aku">
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+        <h1>HAHA</h1>
+      </section>
     </>
   );
 };

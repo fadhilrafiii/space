@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 const useScroll = () => {
   const [scroll, setScroll] = useState({ x: 0, y: 0 });
   const [scrollDirection, setScrollDirection] = useState("UP");
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const onScroll = (e) => {
       const window = e?.currentTarget;
 
