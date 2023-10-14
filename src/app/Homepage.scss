@@ -1,0 +1,34 @@
+@import '/src/styles/typed';
+
+.landing {
+  // background: radial-gradient(ellipse at 50% 10%, black, #151c30);
+  background: radial-gradient(circle at 50% 200%, black, black 65%, #151c30 85%, #151c30 85%);
+}
+
+.moon {
+  filter: drop-shadow(0px 0px 80px #fff) drop-shadow(0px 0px 25px #fce0d1);
+
+  @media (max-width: 1200px) {
+    width: 150px;
+    filter: drop-shadow(0px 0px 60px #fff) drop-shadow(0px 0px 18px #fce0d1);
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    filter: drop-shadow(0px 0px 40px #fff) drop-shadow(0px 0px 12px #fce0d1);
+  }
+}
+
+.job-title {
+  pointer-events: none;
+  @include typed(
+    "Software Engineer",
+    "Fullstack Engineer",
+    "Web Developer",
+    1.5,
+    (
+      caret-width: 2px,
+      caret-space: 2px
+    )
+  );
+}

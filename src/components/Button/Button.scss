@@ -1,0 +1,64 @@
+$primary-color: white;
+
+.btn, .link {
+  min-width: 120px;
+  border-radius: 4px;
+  font-family: var(--font-text);
+  padding: 10px 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: all 0.25s;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    min-width: 80px;
+  }
+}
+
+.link {
+  cursor: pointer;
+  font-weight: 400 !important;
+}
+
+.link.primary {
+  color: $primary-color;
+}
+
+.link:hover, .link:active {
+  text-decoration:  underline;
+  text-shadow: 0 0 8px $primary-color;
+}
+
+.btn.link:hover, .btn.link:active {
+  text-decoration: unset;
+  text-shadow: 0 0 8px $primary-color;
+}
+
+.primary.filled {
+  position: relative;
+  border: none;
+  background-color: $primary-color;
+  outline: none;
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.primary.filled:hover, .primary.filled:active {
+  box-shadow: 0 0 8px $primary-color;
+}
+
+.primary.outlined {
+  position: relative;
+  border: 1px solid $primary-color;
+  background-color: transparent;
+  outline: none;
+  color: $primary-color;
+}
+
+.primary.outlined:hover, .primary.outlined:active {
+  border-color: transparent;
+  text-shadow: 0 0 8px $primary-color;
+}
