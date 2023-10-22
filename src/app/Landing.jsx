@@ -27,6 +27,7 @@ const Landing = () => {
         scrollTrigger: {
           trigger: containerRef.current,
           scrub: 1,
+          pin: true,
           start: "top top",
           end: "bottom 40%",
           onUpdate: (self) => {
@@ -40,7 +41,7 @@ const Landing = () => {
         moonRef.current,
         {
           ease: "circ",
-          top: "-15%",
+          top: "15%",
           opacity: 1,
           filter: "drop-shadow(0 0 60px #fff)",
         },
@@ -134,7 +135,7 @@ const Landing = () => {
         style={{ position: "absolute", top: 0, left: 0 }}
         resize={{ scroll: false }}
       >
-        <Stage environment="night">
+        <Stage environment="park">
           <SpacePlane rotation={[-0.5, -2, 0]} />
         </Stage>
       </Canvas>

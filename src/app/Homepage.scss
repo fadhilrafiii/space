@@ -1,8 +1,14 @@
-@import '/src/styles/typed';
+@import "/src/styles/typed";
 
 .landing {
   // background: radial-gradient(ellipse at 50% 10%, black, #151c30);
-  background: radial-gradient(circle at 50% 200%, black, black 65%, #151c30 85%, #151c30 85%);
+  background: radial-gradient(
+    circle at 50% 200%,
+    black,
+    black 65%,
+    #151c30 85%,
+    #151c30 85%
+  );
 }
 
 .landing-content {
@@ -10,6 +16,10 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+}
+
+.pin-landing {
   height: 100%;
 }
 
@@ -32,7 +42,7 @@
     1.5,
     (
       caret-width: 2px,
-      caret-space: 2px
+      caret-space: 2px,
     )
   );
 }
