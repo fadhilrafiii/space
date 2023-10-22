@@ -1,11 +1,14 @@
-import Button from "@/components/Button";
-import Stars from "@/components/Stars";
+"use client";
 import Head from "next/head";
-import Image from "next/image";
 import "./Homepage.scss";
 import Landing from "./Landing";
+import WindowSizeContext from "@/libs/contexts/windowSizeContext";
+import useWindowSize from "@/libs/hooks/useWindowSize";
+import About from "./About";
 
-const Ayam = () => {
+const HomePage = () => {
+  const windowSize = useWindowSize();
+
   return (
     <>
       <Head>
@@ -24,25 +27,12 @@ const Ayam = () => {
         <meta name="revisit-after" content="7 days" />
         <meta name="author" content="Fadhil Muhammad Rafi" />
       </Head>
-      <Landing />
-      <section id="aku">
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-        <h1>HAHA</h1>
-      </section>
+      <WindowSizeContext.Provider value={windowSize}>
+        <Landing />
+        <About />
+      </WindowSizeContext.Provider>
     </>
   );
 };
 
-export default Ayam;
+export default HomePage;

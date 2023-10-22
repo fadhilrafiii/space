@@ -5,6 +5,14 @@
   background: radial-gradient(circle at 50% 200%, black, black 65%, #151c30 85%, #151c30 85%);
 }
 
+.landing-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .moon {
   @media (max-width: 1200px) {
     width: 180px;

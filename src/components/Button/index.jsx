@@ -16,12 +16,14 @@ const Button = ({
   className = "",
   children,
   href,
+  style,
 }) => {
   if (type === "link") {
     return (
       <a
         href={href}
         className={`${mode ? "btn" : ""} link ${mode} ${theme} ${className}`}
+        style={style}
       >
         {children}
       </a>
@@ -29,7 +31,9 @@ const Button = ({
   }
 
   return (
-    <button className={`btn ${mode} ${theme} ${className}`}>{children}</button>
+    <button className={`btn ${mode} ${theme} ${className}`} style={style}>
+      {children}
+    </button>
   );
 };
 

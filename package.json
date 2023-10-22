@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.88.4",
+    "@react-three/fiber": "^8.14.6",
+    "framer-motion": "^10.16.4",
+    "gltfjsx": "^6.2.13",
     "gsap": "^3.12.2",
+    "maath": "^0.10.4",
     "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "sass": "^1.68.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.68.0",
+    "three": "^0.157.0"
   },
   "devDependencies": {
     "autoprefixer": "latest",

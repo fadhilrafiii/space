@@ -4,7 +4,7 @@ import NoSSR from "../NoSSR";
 
 const Stars = () => {
   const starsPosition = useMemo(() => {
-    return Array(20)
+    return Array(80)
       .fill(0)
       .map(() => ({
         x: Math.random() * 100,
@@ -15,7 +15,7 @@ const Stars = () => {
 
   return (
     <NoSSR>
-      <div className="absolute w-full h-full">
+      <div className="absolute w-full h-full overflow-hidden">
         {starsPosition.map((pos, idx) => (
           <Image
             key={idx}
