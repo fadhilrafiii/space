@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import { useContext, useLayoutEffect, useRef, useState } from "react";
+import { Suspense, useContext, useLayoutEffect, useRef, useState } from "react";
 
 import Button from "@/components/Button";
 import Stars from "@/components/Stars";
@@ -13,6 +13,7 @@ import { Canvas } from "@react-three/fiber";
 import { Stage } from "@react-three/drei";
 import SpacePlane from "@/components/Model/SpacePlane";
 import WindowSizeContext from "@/libs/contexts/windowSizeContext";
+import Loader from "@/components/Loader";
 
 const Landing = () => {
   const [moonLight, setMoonLight] = useState(0);
@@ -136,7 +137,9 @@ const Landing = () => {
         resize={{ scroll: false }}
       >
         <Stage environment="park">
-          <SpacePlane rotation={[-0.5, -2, 0]} />
+          <Suspense fallback={<Loader />}>
+            <SpacePlane rotation={[-0.5, -2, 0]} />
+          </Suspense>
         </Stage>
       </Canvas>
       {windowSize.width > 768 ? (
